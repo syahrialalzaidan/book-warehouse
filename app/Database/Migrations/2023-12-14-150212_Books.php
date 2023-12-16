@@ -55,6 +55,19 @@ class Books extends Migration
 
         $this->forge->addKey('id', true);
         $this->forge->createTable('books');
+
+        $this->forge->addField([
+            'username' => [
+                'type' => 'VARCHAR',
+                'constraint' => 255,
+            ],
+            'password' => [
+                'type' => 'VARCHAR',
+                'constraint' => 255,
+            ],
+        ]);
+        $this->forge->addKey('username', true);
+        $this->forge->createTable('users');
     }
 
     public function down()

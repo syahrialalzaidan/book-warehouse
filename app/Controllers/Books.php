@@ -15,6 +15,10 @@ class Books extends BaseController
 
     public function index(): string
     {
+        if (!session()->get('username')) {
+            return view('pages/login');
+        }
+
         $books = $this->bookModel->getBook();
         $data = [
             'title' => 'Home | Perpustakaan',
@@ -25,6 +29,9 @@ class Books extends BaseController
 
     public function tambah(): string
     {
+        if (!session()->get('username')) {
+            return view('pages/login');
+        }
         $data = [
             'title' => 'Tambah Buku | Perpustakaan',
             'validation' => \Config\Services::validation()
@@ -67,6 +74,9 @@ class Books extends BaseController
 
     public function detail($id)
     {
+        if (!session()->get('username')) {
+            return view('pages/login');
+        }
         $data = [
             'title' => 'Detail Buku | Perpustakaan',
             'book' => $this->bookModel->getBook($id)
@@ -90,6 +100,9 @@ class Books extends BaseController
 
     public function edit($slug)
     {
+        if (!session()->get('username')) {
+            return view('pages/login');
+        }
         $data = [
             'title' => 'Edit Buku | Perpustakaan',
             'validation' => \Config\Services::validation(),
