@@ -17,4 +17,12 @@ class BookModel extends Model
         }
         return $this->where(['id' => $id])->first();
     }
+
+    public function updateStok($id, $stok)
+    {
+        $db = \Config\Database::connect();
+        $queryString = 'UPDATE books SET stok = ' . $stok . ' WHERE id = ' . $id;
+        $query   = $db->query($queryString);
+        return $query;
+    }
 }

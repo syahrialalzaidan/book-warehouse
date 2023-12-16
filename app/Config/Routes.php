@@ -15,6 +15,7 @@ $routes->get('/details/(:any)', 'Books::detail/$1');
 $routes->delete('/(:num)', 'Books::delete/$1');
 
 $routes->get('/api/books', 'BooksAPI::index');
+$routes->post('/api/transaction', 'TransactionAPI::index');
 
 $routes->get('/login', 'LoginController::index');
 $routes->post('/login_action', 'LoginController::login_action');
