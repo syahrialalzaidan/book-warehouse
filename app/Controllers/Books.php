@@ -64,6 +64,7 @@ class Books extends BaseController
             'slug' => $slug,
             'penulis' => $this->request->getVar('penulis'),
             'penerbit' => $this->request->getVar('penerbit'),
+            'harga' => $this->request->getVar('harga'),
             'deskripsi' => $this->request->getVar('deskripsi'),
             'stok' => $this->request->getVar('stok'),
             'created_at' => date('Y-m-d H:i:s'),
@@ -136,6 +137,7 @@ class Books extends BaseController
             'slug' => $slug,
             'penulis' => $this->request->getVar('penulis'),
             'penerbit' => $this->request->getVar('penerbit'),
+            'harga' => $this->request->getVar('harga'),
             'deskripsi' => $this->request->getVar('deskripsi'),
             'stok' => $this->request->getVar('stok')
         ]);

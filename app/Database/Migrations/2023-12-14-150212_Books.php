@@ -35,6 +35,10 @@ class Books extends Migration
                 'type' => 'VARCHAR',
                 'constraint' => 50,
             ],
+            'harga' => [
+                'type' => 'INT',
+                'constraint' => 11,
+            ],
             'deskripsi' => [
                 'type' => 'VARCHAR',
                 'constraint' => 255,

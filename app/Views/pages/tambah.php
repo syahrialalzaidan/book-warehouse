@@ -43,6 +43,12 @@
                     </div>
                 </div>
                 <div class="row mb-3">
+                    <label for="penerbit" class="col-sm-2 col-form-label">Harga</label>
+                    <div class="col-sm-10">
+                        <input type="number" class="form-control" id="harga" name="harga" value="<?= old('harga'); ?>">
+                    </div>
+                </div>
+                <div class="row mb-3">
                     <label for="sampul" class="col-sm-2 col-form-label">Sampul Buku</label>
                     <div class="col-sm-2">
                         <img src="/img/default.jpg" class="img-thumbnail img-preview">
