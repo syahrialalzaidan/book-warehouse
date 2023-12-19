@@ -12,7 +12,7 @@ class BookSeeder extends Seeder
     {
         $databook = [
             [
-                'sampul' => 'naruto.jepg',
+                'sampul' => 'naruto.jpeg',
                 'judul' => 'Naruto',
                 'slug' => 'naruto',
                 'penulis' => 'Masashi Kishimoto',
@@ -24,7 +24,7 @@ class BookSeeder extends Seeder
                 'updated_at' => Time::now()
             ],
             [
-                'sampul' => 'conan.jepg',
+                'sampul' => 'conan.jpeg',
                 'judul' => 'Detektif Conan',
                 'slug' => 'detektif-conan',
                 'penulis' => 'Gosho Aoyama',
@@ -36,7 +36,7 @@ class BookSeeder extends Seeder
                 'updated_at' => Time::now()
             ],
             [
-                'sampul' => 'xmen.jepg',
+                'sampul' => 'xmen.jpeg',
                 'judul' => 'X-MEN',
                 'slug' => 'x-men',
                 'penulis' => 'Jack Kirby',

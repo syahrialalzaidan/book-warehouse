@@ -14,6 +14,7 @@
                         <div class="card-body">
                             <h5 class="card-title"><?= $book['judul']; ?></h5>
                             <p class="card-text"><?= $book['deskripsi']; ?></p>
+                            <p class="card-text"><small class="text-body-secondary">Harga : <?= $book['harga']; ?></small></p>
                             <p class="card-text"><small class="text-body-secondary">Stok : <?= $book['stok']; ?></small></p>
 
                             <a href="/edit/<?= $book['id']; ?>" class="btn btn-warning">Edit</a>

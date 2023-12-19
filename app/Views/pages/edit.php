@@ -45,7 +45,7 @@
                 <div class="row mb-3">
                     <label for="penerbit" class="col-sm-2 col-form-label">Harga</label>
                     <div class="col-sm-10">
-                        <input type="number" class="form-control" id="harga" name="harga" value="<?= old('harga'); ?>">
+                        <input type="number" class="form-control" id="harga" name="harga" value="<?= $book['harga']; ?>">
                     </div>
                 </div>
                 <div class="row mb-3">
